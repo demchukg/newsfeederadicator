@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "NewsFeed Eradicator",
+  "description": "Hides the LinkedIn and Youtube home feed so you can focus.",
+  "version": "1.0.26",
+  "icons": {
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "NewsFeed Eradicator"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.linkedin.com/feed/*",
+        "https://www.youtube.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "permissions": [
+    "storage",
+    "tabs",
+    "scripting",
+    "webNavigation"
+  ],
+  "host_permissions": [
+    "*://www.linkedin.com/*"
+  ]
+}
