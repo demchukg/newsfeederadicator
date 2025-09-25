@@ -12,3 +12,5 @@ https://chromewebstore.google.com/detail/newsfeed-eradicator/efiablloepgfoffbbld
 The extension still has some bugs that I’ll fix later.
 
 Thanks for your attention, and have a great day! ☕️
+
+P.S. If you want to use this codebase, just mention me. But I doubt you’ll actually want to use this crappy code. 😅
